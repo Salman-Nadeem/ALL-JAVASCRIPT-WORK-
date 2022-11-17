@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //<------QUESTION NO 1------>//
+        {
+            let a = prompt("enter your first number")
+            let b = prompt("enter your second number")
+            function name() {
+                document.write("greeting!" + "<br/>" + a + b)
+            }
+            name();
+        }
+        //<------QUESTION NO 2------>//
+        {
+            let a = parseInt(prompt("enter your first number"))
+            let b = parseInt(prompt("enter your second number"))
+            function add() {
+                document.write(a + b)
+            }
+            add();
+        }
+        //<------QUESTION NO 3------>//
+        {
+            let num1 = parseInt(prompt("enter your first number"))
+            let num3 = prompt("enter your opreator")
+            let num2 = parseInt(prompt("enter your second number"))
+            function calculator() {
+                if (num3 == "*") {
+                    document.write(num1 * num2)
+                }
+                else if (num3 == "-") {
+                    document.write(num1 - num2)
+                }
+                else if (num3 == "+") {
+                    document.write(num1 + num2)
+                }
+                else if (num3 == "/") {
+                    document.write(num1 / num2)
+                }
+                else {
+                    document.write("your condition is wrong")
+                }
+            }
+        }
+        //<------QUESTION NO 4------>//
+        {
+            let a = prompt("enter your first number")
+            let b = prompt("enter your second number")
+            document.write(Math.pow(a, b))
+        }
+        //<------QUESTION NO 5------>//
+        function factorialize(num) {
+            if (num < 0)
+                document.write(-1);
+            else if (num == 0)
+                document.write(1);
+            else {
+                document.write(num * factorialize(num - 1));
+            }
+        }
+        factorialize(5);
+        //<------QUESTION NO 6------>//
+        {
+            let num = 6;
+            let fact = 1;
+            for (let i = num; i >= 1; i--) {
+                fact = i*fact
+
+            }
+            document.write(fact)
+        }
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
