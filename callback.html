@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+    <input type="text" id="name" placeholder="enter your name"><br><br>
+    <input type="text" id="contact" placeholder="enter your contact"><br><br>
+    <button onclick="value()">Submit</button>
+</form>
+<h3 id="user"></h3>
+<h4 id="fathr"></h4>
+
+
+    <script>
+        function value(){
+            let name = document.getElementById('name').value
+            let contact = document.getElementById('contact').value
+            display(name , contact)
+        }
+        function display(){
+            document.getElementById('user').innerText = 
+            name
+            document.getElementById('fathr').innerText = 
+            contact
+        } 
+    </script>
+</body>
+</html>
