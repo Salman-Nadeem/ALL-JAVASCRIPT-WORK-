@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <form action="">
+            <input type="text" id="name" placeholder="enter your name"><br><br>
+            <input type="text" id="contact" placeholder="enter your contact"><br><br>
+            <input type="text" id="password" placeholder="enter your password"><br><br>
+        </form>
+        <button onclick="submit()">submit</button><br><br>
+
+        <form action="">
+            <input type="text" id="name2" placeholder="enter your name"><br><br>
+            <input type="text" id="password2" placeholder="enter your password"><br><br>
+        </form>
+        <button onclick="login()">login</button>
+    </center>
+    <script>
+        function submit() {
+            let name = document.getElementById('name').value
+            let contact = document.getElementById('contact').value
+            let password = document.getElementById('password').value
+            localStorage.setItem('username', name)
+            localStorage.setItem('contact', contact)
+            localStorage.setItem('password', password)
+        }
+        function login() {
+            let name2 = document.getElementById('name2').value
+            let password2 = document.getElementById('password2').value
+
+            if (name2 == name2 && password2) {
+                document.write('welcome')
+
+            } else {
+                document.write('error')
+            }
+        }
+    </script>
+</body>
+
+</html>
